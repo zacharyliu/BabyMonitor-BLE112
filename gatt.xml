@@ -55,20 +55,20 @@
 
         <characteristic uuid="9a000620-ed7b-11e3-bb02-0002a5d5c51b" id="accelerometer">
             <description>Accelerometer Data</description>
-            <properties indicate="true" />
+            <properties read="true" />
             <!-- <value variable_length="true" length="20" type="user"></value> -->
-            <value type="hex" length="12" />
+            <value type="user" length="12" />
         </characteristic>
 
     </service>
 
-    <service uuid="1809">
-        <description>Health Thermometer Service</description>
+    <service uuid="a4a1c6c0-ef4e-11e3-b6a0-0002a5d5c51b">
+        <description>Oral Temperature Service</description>
         
-        <characteristic uuid="2a1c" id="thermometer1">
+        <characteristic uuid="b1f11060-ef4e-11e3-bc42-0002a5d5c51b" id="thermometer1">
             <description>Oral Temperature (Celsius)</description>
-            <properties indicate="true" />
-            <value type="hex">0000000000</value>
+            <properties read="true" />
+            <value type="user" length="4" />
         </characteristic>
     </service>
 
@@ -77,8 +77,8 @@
 
         <characteristic uuid="881ad620-ed7a-11e3-8abc-0002a5d5c51b" id="thermometer2">
             <description>Surface Temperature (Celsius)</description>
-            <properties indicate="true" />
-            <value type="hex">0000000000</value>
+            <properties read="true" />
+            <value type="user" length="4" />
         </characteristic>
     </service>
 
