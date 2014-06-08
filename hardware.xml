@@ -10,7 +10,7 @@
     <host_wakeup_pin enable="true" port="1" pin="5" state="down" />
     <wakeup_pin enable="true" port="1" pin="6" state="up" />
     <usb enable="false" endpoint="api" />
-    <usart mode="packet" channel="1" alternate="1" baud="19200" endpoint="api" flow="false" />
+    <usart mode="packet" channel="1" alternate="1" baud="19200" endpoint="api" flow="true" />
     <!--
         UART PIN ASSIGNMENT TABLE:
         +=========+===========+======+======+======+======+
