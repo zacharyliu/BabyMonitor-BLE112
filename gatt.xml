@@ -9,15 +9,14 @@
         <characteristic uuid="2A00" id="c_device_name">
             <description>Device Name</description>
             <properties read="true" const="true" />
-            <value>BGLib U1A1P 38.4NFW</value>
+            <value>Baby Monitor</value>
         </characteristic>
 
         <!-- 2A01: org.bluetooth.characteristic.gap.appearance -->
         <characteristic uuid="2A01" id="c_appearance">
             <description>Appearance</description>
             <properties read="true" const="true" />
-            <!-- 128: Generic Computer, Generic category -->
-            <value type="hex">0080</value>
+            <value type="hex">0768</value>
         </characteristic>
         
     </service>
@@ -31,7 +30,7 @@
         <characteristic uuid="2A29" id="c_manufacturer_name">
             <description>Manufacturer Name</description>
             <properties read="true" const="true" />
-            <value>High Technology High School</value>
+            <value>Team ZEN</value>
         </characteristic>
 
         <!-- 2A24: org.bluetooth.characteristic.model_number_string -->
@@ -46,12 +45,6 @@
     <!-- custom service for data transmission test -->
     <service uuid="88e02c80-ed7b-11e3-b94a-0002a5d5c51b" id="data_transceiver" advertise="true">
         <description>Data transceiver service</description>
-<!-- 
-        <characteristic uuid="8f024da0-ed7b-11e3-98a0-0002a5d5c51b" id="c_rx_data">
-            <description>RX Data</description>
-            <properties write="true" />
-            <value variable_length="true" length="20"></value>
-        </characteristic> -->
 
         <characteristic uuid="9a000620-ed7b-11e3-bb02-0002a5d5c51b" id="accelerometer">
             <description>Accelerometer Data</description>
@@ -67,16 +60,6 @@
         
         <characteristic uuid="b1f11060-ef4e-11e3-bc42-0002a5d5c51b" id="thermometer1">
             <description>Oral Temperature (Celsius)</description>
-            <properties read="true" />
-            <value type="user" length="4" />
-        </characteristic>
-    </service>
-
-    <service uuid="9cc496a0-ed76-11e3-b2dd-0002a5d5c51b" advertise="true">
-        <description>Surface Temperature Service</description>
-
-        <characteristic uuid="881ad620-ed7a-11e3-8abc-0002a5d5c51b" id="thermometer2">
-            <description>Surface Temperature (Celsius)</description>
             <properties read="true" />
             <value type="user" length="4" />
         </characteristic>
